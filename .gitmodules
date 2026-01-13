@@ -1,0 +1,3 @@
+[submodule "vendor/w3c-dtcg"]
+	path = vendor/w3c-dtcg
+	url = https://github.com/design-tokens/community-group
