@@ -11,7 +11,6 @@ export default defineConfig({
     outDir: resolve(__dirname, "dist/skills/design-tokens/scripts"),
     emptyOutDir: false,
     target: "node18",
-    ssr: true,
     rollupOptions: {
       external: [
         // Keep Node.js built-ins external
@@ -21,5 +20,8 @@ export default defineConfig({
       ],
     },
     minify: false,
+  },
+  ssr: {
+    noExternal: true,
   },
 })
