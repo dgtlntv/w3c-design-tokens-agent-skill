@@ -1,0 +1,13 @@
+{
+  "name": "design-tokens",
+  "description": "Design tokens skill for working with design token files and standards",
+  "version": "1.0.0",
+  "author": {
+    "name": "dgtlntv",
+    "url": "https://github.com/dgtlntv"
+  },
+  "repository": "https://github.com/dgtlntv/w3c-design-tokens-agent-skill",
+  "license": "SEE LICENSE IN THIRD_PARTY_NOTICES.md",
+  "keywords": ["design-tokens", "w3c-dtcg", "tokens"],
+  "skills": "./skills/"
+}

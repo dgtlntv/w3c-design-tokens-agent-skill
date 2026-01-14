@@ -1,16 +1,6 @@
 # Dependencies
 node_modules/
 
-# Build outputs
-dist/
-plugin/skills/
-plugin/agents/
-packages/skill/skills/design-tokens/spec/
-packages/skill/schemas/
-
-# pnpm
-.pnpm-debug.log
-
 # IDE
 .idea/
 .vscode/

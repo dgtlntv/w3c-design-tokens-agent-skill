@@ -1,0 +1,25 @@
+{
+  "name": "w3c-design-tokens-agent-skill",
+  "owner": {
+    "name": "dgtlntv",
+    "email": "https://github.com/dgtlntv"
+  },
+  "metadata": {
+    "description": "Claude Code plugins for working with W3C Design Token Community Group specifications"
+  },
+  "plugins": [
+    {
+      "name": "design-tokens",
+      "source": "./dist",
+      "description": "W3C Design Token Community Group (DTCG) specification support for creating and validating design token files",
+      "version": "1.0.0",
+      "author": {
+        "name": "dgtlntv"
+      },
+      "repository": "https://github.com/dgtlntv/w3c-design-tokens-agent-skill",
+      "license": "MIT",
+      "keywords": ["design-tokens", "w3c-dtcg", "tokens"],
+      "category": "development"
+    }
+  ]
+}

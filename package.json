@@ -1,14 +1,17 @@
 {
   "name": "design-token-claude-plugin",
   "version": "1.0.0",
-  "description": "Claude Code plugin monorepo for design tokens with skill and subagent",
+  "description": "Claude Code plugin for design tokens",
   "private": true,
   "type": "module",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "pnpm -r build",
-    "test:skill": "claude --plugin-dir ./packages/skill",
-    "test:agent": "claude --plugin-dir ./packages/subagent",
-    "test:combined": "claude --plugin-dir ./plugin"
+    "build": "tsx build.ts",
+    "test": "claude --plugin-dir ./dist",
+    "validate:tokens": "node dist/skills/design-tokens/scripts/validate.js tokens",
+    "validate:resolver": "node dist/skills/design-tokens/scripts/validate.js resolver"
   },
   "keywords": [
     "claude-code",
@@ -17,18 +20,20 @@
     "style-dictionary",
     "w3c-dtcg"
   ],
-  "author": "Your Name",
-  "license": "MIT",
+  "author": "dgtlntv",
+  "license": "SEE LICENSE IN THIRD_PARTY_NOTICES.md",
   "repository": {
     "type": "git",
     "url": "https://github.com/your-username/design-token-claude-plugin"
   },
-  "packageManager": "pnpm@9.15.0",
   "engines": {
     "node": ">=18"
   },
   "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
     "tsx": "^4.21.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
   }
 }
