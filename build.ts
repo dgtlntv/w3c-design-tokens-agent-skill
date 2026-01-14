@@ -148,13 +148,13 @@ function buildValidationScript(): void {
 function copyLicenseNotices(): void {
   console.log("\nCopying license notices...")
   if (existsSync(LICENSE)) {
-    cpSync(LICENSE, join(DIST, "LICENSE"))
+    cpSync(LICENSE, join(SKILL_DEST, "LICENSE"))
     console.log("  ✓ Copied LICENSE")
   } else {
     console.warn("  ⚠ LICENSE not found")
   }
   if (existsSync(THIRD_PARTY_NOTICES)) {
-    cpSync(THIRD_PARTY_NOTICES, join(DIST, "THIRD_PARTY_NOTICES.md"))
+    cpSync(THIRD_PARTY_NOTICES, join(SKILL_DEST, "THIRD_PARTY_NOTICES.md"))
     console.log("  ✓ Copied THIRD_PARTY_NOTICES.md")
   } else {
     console.warn("  ⚠ THIRD_PARTY_NOTICES.md not found")
